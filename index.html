@@ -13,6 +13,7 @@
           
 <textarea placeholder="html" id="html">
 <p class="resultado"></p>
+<p class="testVelocidad"></p>
 </textarea>
           
         </div>
@@ -32,6 +33,7 @@ function search(arr, x) {
 // Ejecutar la función y mostrar el resultado en el cuerpo del documento
 var resultado = search(items, 17);
 var resultadoHTML = document.createElement('p');
+resultadoHTML.id = 'resultado'; // Asigna el ID que desees
 if (resultado !== null) {
   resultadoHTML.textContent = 'El elemento 1 se encuentra en la posición ' + resultado;
 } else {
@@ -46,6 +48,9 @@ var count = 10000;
 var start = new Date();
 for (i = 0; i < count; i++) search(items, 7777);
 var milliseconds = (new Date()) - start;
+var testVelocidadHTML = document.createElement('p');
+testVelocidadHTML.id = 'testVelocidad'; // Asigna el ID que desees 
+testVelocidadHTML.textContent = 'Test de velocidad en milisegundos ' + milliseconds;
 console.log(milliseconds);  
 </textarea>
           
