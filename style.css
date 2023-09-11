@@ -26,6 +26,7 @@ section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  height: 100vh;
 }
 
 iframe{
@@ -33,4 +34,14 @@ iframe{
   height: 100%;
   border: 0;
   background: #fff
+}
+
+textarea{
+  background: #333;
+  width: 100%;
+  border: 0;
+  color: #fff;
+  font-family: monospace;
+  height: 100%;
+  font-size: 24px;
 }
