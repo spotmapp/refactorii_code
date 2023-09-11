@@ -38,6 +38,15 @@ if (resultado !== null) {
   resultadoHTML.textContent = 'El elemento 1 no se encuentra en el array.';
 }
 document.body.appendChild(resultadoHTML);
+
+// Test de velocidad *
+var i = 0;
+items = Array.apply(null, Array(10000)).map(function () { return ++i });
+var count = 10000;
+var start = new Date();
+for (i = 0; i < count; i++) search(items, 7777);
+var milliseconds = (new Date()) - start;
+console.log(milliseconds);  
 </textarea>
           
         </div>
