@@ -24,8 +24,8 @@ body {
 
 .grid{
   display: grid;
-  grid-template-columns: 1fr 5px 1fr;
-  grid-template-rows: 1fr 5px 1fr;
+  grid-template-columns: 1fr 7px 1fr;
+  grid-template-rows: 1fr 7px 1fr;
   height: 100vh;
 }
 
