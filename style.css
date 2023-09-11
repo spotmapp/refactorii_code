@@ -66,13 +66,16 @@ textarea:focus:{
 
 #js{
   color: #ebe29e;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
 }
 #css{
   color: #b0c1e9;
+  font-weight: bold;
 }
 #html{
   color: #b0e9b8;
+  font-weight: bold;
 }
 
 /* #html{
