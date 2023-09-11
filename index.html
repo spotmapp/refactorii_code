@@ -50,8 +50,8 @@ for (i = 0; i < count; i++) search(items, 7777);
 var milliseconds = (new Date()) - start;
 var testVelocidadHTML = document.createElement('p');
 testVelocidadHTML.id = 'testVelocidad'; // Asigna el ID que desees 
-testVelocidadHTML.textContent = 'Test de velocidad en milisegundos ' + milliseconds;
-console.log(milliseconds);  
+testVelocidadHTML.textContent = 'Test de velocidad en milisegundos: ' + milliseconds;
+document.body.appendChild(testVelocidadHTML);  
 </textarea>
           
         </div>
@@ -61,7 +61,8 @@ console.log(milliseconds);
 p{
   font-family: helvetica;
   color: green;
-  font-size:16px;
+  font-size:18px;
+  font-weight: bold;
 }
 </textarea>
           
