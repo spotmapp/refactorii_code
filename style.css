@@ -1,7 +1,8 @@
 body { 
   background-color: #f1f1f1;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 14px; 
+  font-size: 14px;
+  font-weight: bold;
   line-height: 1.42857143; 
   margin: 0; padding: 0; 
   height: 100vh;
