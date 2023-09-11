@@ -21,7 +21,10 @@
           
 <textarea placeholder="js" id="js">
 
-// ----- 1. Función de búsqueda
+//-----------------------
+// 1. Función de búsqueda
+//-----------------------
+  
 var items = [2, 3, 5, 7, 11, 13, 17];
 function search(arr, x) {
   var i = 0;
@@ -32,8 +35,11 @@ function search(arr, x) {
   }
   return null;
 }
+
+//--------------------------- 
+// 2. Ejecución de la función y mostrar el resultado en el cuerpo del documento
+//---------------------------
   
-// ----- 2. Ejecución de la función y mostrar el resultado en el cuerpo del documento
 var resultado = search(items, 17);
 var resultadoHTML = document.createElement('p');
 resultadoHTML.id = 'resultado'; // Asigna el ID que desees
@@ -44,7 +50,10 @@ if (resultado !== null) {
 }
 document.body.appendChild(resultadoHTML);
 
-// ----- 3. Test de velocidad
+//---------------------
+// 3. Test de velocidad
+//---------------------
+  
 var i = 0;
 items = Array.apply(null, Array(10000)).map(function () { return ++i });
 var count = 10000;
