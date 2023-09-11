@@ -1,4 +1,4 @@
-import '.style.css'
+import './style.css'
 
 const $ = selector => document.querySelector(selector)
 
