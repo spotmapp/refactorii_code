@@ -24,17 +24,19 @@ body {
 
 .grid{
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  grid-template-rows: 1fr 1px 1fr;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-template-rows: 1fr 5px 1fr;
   height: 100vh;
 }
 
 .vertical-gutter{
+  cursor: col-resize;
   grid-area: 1 / 2 / 4 / 2;
   border: solid 1px #fff;
 }
 
 .horizontal-gutter{
+  cursor: col-resize;
   grid-area: 2 / 1 / 2 / 4;
   border: solid 1px #fff;
 }
