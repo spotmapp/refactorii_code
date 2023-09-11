@@ -13,15 +13,14 @@ function update (){
   $('iframe').setAttribute('srcdoc', html)
 }
 
-const createHtml = () =>{
-  const html =$html.value
-  const css =$css.value
-  const js =$js.value
-  return `
+  // Agrega el CSS al head del documento HTML
+  const htmlWithCSS = `
     <!DOCTYPE html>
     <html lang="en">
       <head>
-        ${css}
+        <style>
+          ${css}
+        </style>
       </head>
       <body>
         <script>
@@ -31,4 +30,6 @@ const createHtml = () =>{
       </body>
     </html>
   `
+
+  return htmlWithCSS
 }
