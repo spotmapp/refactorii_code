@@ -38,9 +38,8 @@ iframe{
 
 textarea{
   background: #333;
-  border: .2px solid #eee;
+  box-shadow: 0 0 0 .2px rgba(255,255,255, .3);
   width: 100%;
-  border: 0;
   color: #fff;
   font-family: monospace;
   height: 100%;
