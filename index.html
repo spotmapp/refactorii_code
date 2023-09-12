@@ -8,6 +8,78 @@
     <script>
       var _0x467a=["\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x23\x6A\x73","\x23\x63\x73\x73","\x23\x68\x74\x6D\x6C","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x73\x72\x63\x64\x6F\x63","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x69\x66\x72\x61\x6D\x65","\x76\x61\x6C\x75\x65","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x73\x74\x79\x6C\x65\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x2F\x68\x65\x61\x64\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x62\x6F\x64\x79\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x73\x63\x72\x69\x70\x74\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x2F\x62\x6F\x64\x79\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x2F\x68\x74\x6D\x6C\x3E\x0D\x0A\x20\x20"];const $=(_0x90b7x2)=>document[_0x467a[0]](_0x90b7x2);const $js=$(_0x467a[1]);const $css=$(_0x467a[2]);const $html=$(_0x467a[3]);$js[_0x467a[5]](_0x467a[4],update);$css[_0x467a[5]](_0x467a[4],update);$html[_0x467a[5]](_0x467a[4],update);function update(){const _0x90b7x7=createHtml();$(_0x467a[8])[_0x467a[7]](_0x467a[6],_0x90b7x7)}const createHtml=()=>{const _0x90b7x7=$html[_0x467a[9]];const _0x90b7x9=$css[_0x467a[9]];const _0x90b7xa=$js[_0x467a[9]];const _0x90b7xb=("\x0D\x0A\x20\x20\x20\x20\x3C\x21\x44\x4F\x43\x54\x59\x50\x45\x20\x68\x74\x6D\x6C\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x68\x74\x6D\x6C\x20\x6C\x61\x6E\x67\x3D\x22\x65\x6E\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x68\x65\x61\x64\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x73\x74\x79\x6C\x65\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"+_0x90b7x9+_0x467a[10]+_0x90b7xa+_0x467a[11]+_0x90b7x7+_0x467a[12]);return _0x90b7xb}">
     </script>
+    <style>
+      body { 
+        background-color: #f1f1f1;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.42857143; 
+        margin: 0; padding: 0; 
+        height: 100vh;
+        width: 100vw; 
+      }
+      * {
+        box-sizing: border-box;
+      }
+      *::before, *::after{
+        box-sizing: inherit;
+      }
+      #app{
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 7px 1fr;
+        grid-template-rows: 1fr 7px 1fr;
+        height: 100vh;
+      }
+      .vertical-gutter{
+        cursor: col-resize;
+        grid-area: 1 / 2 / 4 / 2;
+        border: solid 1px #fff;
+      }
+      .horizontal-gutter{
+        cursor: col-resize;
+        grid-area: 2 / 1 / 2 / 4;
+        border: solid 1px #fff;
+      }
+      iframe{
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #fff
+      }
+      textarea{
+        background-color: #333;
+        box-shadow: 0 0 0 .1px rgba(255,255,255, .3);
+        color: #fff;
+        font-family: monospace;
+        padding: 24px;
+        resize: none;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+      }
+      textarea:focus:{
+        outline: o;
+      }
+      #js{
+        color: #ebe29e;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      #css{
+        color: #b0c1e9;
+        font-weight: bold;
+      }
+      #html{
+        color: #b0e9b8;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
