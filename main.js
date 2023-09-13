@@ -38,4 +38,4 @@ function update (){
   `
 
   return htmlWithCSS
-} */
+} 
