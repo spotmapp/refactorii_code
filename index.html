@@ -60,9 +60,15 @@ if (resultado !== null) {
 }
 document.body.appendChild(resultadoHTML);
 
-//---------------------
+//--------------------------------------------------------------------------------
 // 5. Test de velocidad
-//---------------------
+// Concepto de medición, validación de rendimiento espacio (almacenamiento) y tiempo
+// tiene que ver con: 
+//   - capacidad de procesamiento en disco RAM
+//   - capacidad de almacenamiento (fuente de datos (I) y desborde salida (O))
+//     donde almacenar la data de entrada en el navegador? Rta/ JSON, Array, Localstorage, State
+//     si la data es muy grande y proviene de un API o BD, como almacenarla y manipularla en flujo del algoritmo?
+//--------------------------------------------------------------------------------
   
 var i = 0;
 items = Array.apply(null, Array(10000)).map(function () { return ++i });
