@@ -112,7 +112,14 @@ function sumar_elementos_array(arr, x) {
   }
   return suma;
 }
-sumar_elementos_array();
+
+resultado = sumar_elementos_array();
+resultadoHTML = document.createElement('p');
+resultadoHTML.id = 'resultado'; // Asigna el ID que desees
+if (resultado !== null) {
+  resultadoHTML.textContent = 'La suma es: ' + resultado + ' :)';
+}
+document.body.appendChild(resultadoHTML);
   
 </textarea>
           
