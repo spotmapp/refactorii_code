@@ -93,22 +93,13 @@ testVelocidadHTML.textContent = 'Test de velocidad en milisegundos: ' + millisec
 document.body.appendChild(testVelocidadHTML); 
 
 //---------- Clase martes 19 sept 2023
-        // Objetivo: a través de un evento de botón (click) desplegar un prompt para obtener un dato del usuario
+        // Objetivo: a través de un evento de botón (onClick) desplegar un prompt para obtener un dato del usuario
         // e imprimirlo en un alert
         // Obtenemos el botón por su ID
-        const promptButton = document.getElementById('promptButton');
-        // Agregamos un evento de clic al botón
-        promptButton.addEventListener('click', function () {
-            // Mostramos un prompt y guardamos la entrada del usuario en una variable
-            const userInput = prompt('Ingresa algo:');
-            
-            // Comprobamos si el usuario ingresó algo
-            if (userInput !== null) {
-                alert('Ingresaste: ' + userInput);
-            } else {
-                alert('No ingresaste nada o cancelaste.');
-            }
-        });
+        function promptMe(){
+          var entradaUsuario = prompt("Por favor ingresa tu nombre");
+          alert (entradaUsuario);
+        }
   
 </textarea>
           
