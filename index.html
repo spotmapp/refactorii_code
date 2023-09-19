@@ -100,26 +100,6 @@ document.body.appendChild(testVelocidadHTML);
       var entradaUsuario = prompt("Por favor ingresa tu nombre");
       alert (entradaUsuario);
    }
-
-// sumar los elementos del array:
-function sumar_elementos_array(arr, x) {
-  var i = 0;
-  var count = arr.length;
-  var suma = "";
-  while (i < count) {
-    suma = suma + arr[i];
-    i++;
-  }
-  return suma;
-}
-
-resultado = sumar_elementos_array();
-resultadoHTML = document.createElement('p');
-resultadoHTML.id = 'resultado'; // Asigna el ID que desees
-if (resultado !== null) {
-  resultadoHTML.textContent = 'La suma es: ' + resultado + ' :)';
-}
-document.body.appendChild(resultadoHTML);
   
 </textarea>
           
