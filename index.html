@@ -14,29 +14,14 @@
 <textarea placeholder="html" id="html">
 <p class="resultado"></p>
 <p class="testVelocidad"></p>
+<button id="promptButton">Mostrar Prompt</button>
 </textarea>
           
         </div>
         <div>
           
 <textarea placeholder="js" id="js">
-// -----------------------------------------------------------------
-// Vamos a trabajar 3 dimensiones: 
-// - Socialización y Conceptualización: exposición del profesor en este editor durante la sesión 
-// - Dinamización: trabajo individual (repo github) en línea o grupal (repl.it, codeplay.com) durante la sesión 
-// 
-//   * Justificación de porque este editor de código no autocompleta ni importa dependencias:
-//   facilita la conceptualización, motiva la discursividad y aumenta la capacidad intelectual
-//   obligando a pensar y recordar, es decir ejercita la memoria en relación al lenguaje verbal.
-//   al no haber autocompletación de código surge la necesidad de construir las palabras, los conceptos y las ideas en la mente
-//   es decir no le dejamos campo a que la IA piense por nosotros (vscode, chat gpt o github copilot)
-//   esto incentiva la creatividad, la imaginación, el discurso y la necesidad de crear referencias y relaciones espacio temporales
-//   en la memoria que a largo plazo nos dará la capacidad de pensar programáticamente, 
-//   También nos ejercita en la elaboración de criterios propios y la toma de decisiones que son aspectos que
-//   no hacen parte de la cultura del click ni de la obtención instantanea e inconsciente de contenido, ni de retribución 
-//   estilo me gusta (facebook, tik tok, instagram, etc, etc) por eso este editor no tiene autocompletado ni hace uso de librerias 
-//   ni dependencias externas.
-  
+ 
 // ------- Socialización y Conceptualización: .this
 // Existen 5 instancias principales de procesamiento en un programa:
 // Input data, 
@@ -105,7 +90,26 @@ var milliseconds = (new Date()) - start;
 var testVelocidadHTML = document.createElement('p');
 testVelocidadHTML.id = 'testVelocidad'; // Asigna el ID que desees 
 testVelocidadHTML.textContent = 'Test de velocidad en milisegundos: ' + milliseconds;
-document.body.appendChild(testVelocidadHTML);  
+document.body.appendChild(testVelocidadHTML); 
+
+//---------- Clase martes 19 sept 2023
+        // Objetivo: a través de un evento de botón (click) desplegar un prompt para obtener un dato del usuario
+        // e imprimirlo en un alert
+        // Obtenemos el botón por su ID
+        const promptButton = document.getElementById('promptButton');
+        // Agregamos un evento de clic al botón
+        promptButton.addEventListener('click', function () {
+            // Mostramos un prompt y guardamos la entrada del usuario en una variable
+            const userInput = prompt('Ingresa algo:');
+            
+            // Comprobamos si el usuario ingresó algo
+            if (userInput !== null) {
+                alert('Ingresaste: ' + userInput);
+            } else {
+                alert('No ingresaste nada o cancelaste.');
+            }
+        });
+  
 </textarea>
           
         </div>
