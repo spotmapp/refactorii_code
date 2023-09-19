@@ -93,13 +93,26 @@ testVelocidadHTML.textContent = 'Test de velocidad en milisegundos: ' + millisec
 document.body.appendChild(testVelocidadHTML); 
 
 //---------- Clase martes 19 sept 2023
-        // Objetivo: a través de un evento de botón (onClick) desplegar un prompt para obtener un dato del usuario
-        // e imprimirlo en un alert
-        // Obtenemos el botón por su ID
-        function promptMe(){
-          var entradaUsuario = prompt("Por favor ingresa tu nombre");
-          alert (entradaUsuario);
-        }
+// Objetivo: a través de un evento de botón (onClick) desplegar un prompt para obtener un dato del usuario
+// e imprimirlo en un alert
+// Obtenemos el botón por su ID
+   function promptMe(){
+      var entradaUsuario = prompt("Por favor ingresa tu nombre");
+      alert (entradaUsuario);
+   }
+
+// sumar los elementos del array:
+function sumar_elementos_array(arr, x) {
+  var i = 0;
+  var count = arr.length;
+  var suma = "";
+  while (i < count) {
+    suma = suma + arr[i];
+    i++;
+  }
+  return suma;
+}
+sumar_elementos_array();
   
 </textarea>
           
